@@ -7,11 +7,11 @@
         <legend>Vos informations personelles</legend>
         <div class="form-group row">
             <label for="prenom" class="col-sm-3 col-form-label">Prénom*</label>
-            <input id="prenom" class="col-sm-6" type="text" name="prenom" placeholder="Votre prénom" required />
+            <input id="prenom" class="col-sm-6" type="text" name="prenom" placeholder="Votre prénom" minlength="3" maxlength="30" required />
         </div>
         <div class="form-group row">
             <label for="nom" class="col-sm-3 col-form-label">Nom*</label>
-            <input id="nom" class="col-sm-6" type="text" name="nom" placeholder="Votre nom" required />
+            <input id="nom" class="col-sm-6" type="text" name="nom" placeholder="Votre nom" minlength="3" maxlength="30" required />
         </div>
         <div class="form-group row">
             <label for="genre" class="col-sm-3 col-form-label">Genre*</label>
@@ -20,7 +20,7 @@
         </div>
         <div class="form-group row">
             <label for="email" class="col-sm-3 col-form-label">Email*</label>
-            <input id="email" class="col-sm-6" type="email" name="email" placeholder="Votre email" required />
+            <input id="email" class="col-sm-6" type="email" name="email" placeholder="Votre email" minlength="3" maxlength="50" required />
         </div>
         <div class="form-group row">
             <label for="pays" class="col-sm-3 col-form-label">Pays*</label>
