@@ -1,17 +1,31 @@
+<style>
+input[type=text]:valid:focus, input[type=email]:valid:focus{
+  color: green;
+  border: green 3px solid;
+} 
+input[type=text]:invalid:focus, input[type=email]:invalid:focus{
+  color: red;
+  border: red 3px solid;
+}
+.blindtest{
+  display: none;
+}
+</style>
 <h2>Contact</h2>
-<form action="#" class="col-md-5">
+<form action="#" method="post" class="col-md-5">
   <fieldset>
     <legend>Formulaire de contact</legend>
     <div class="required">*champs requis</div>
       <fieldset>
         <legend>Vos informations personelles</legend>
+        <input id="firstname" class="col-sm-6 blindtest" type="text" name="firstname" placeholder="Votre prénom" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}"/>
         <div class="form-group row">
             <label for="prenom" class="col-sm-3 col-form-label">Prénom*</label>
-            <input id="prenom" class="col-sm-6" type="text" name="prenom" placeholder="Votre prénom" minlength="3" maxlength="30" required />
+            <input id="prenom" class="col-sm-6" type="text" name="prenom" placeholder="Votre prénom" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}" required />
         </div>
         <div class="form-group row">
             <label for="nom" class="col-sm-3 col-form-label">Nom*</label>
-            <input id="nom" class="col-sm-6" type="text" name="nom" placeholder="Votre nom" minlength="3" maxlength="30" required />
+            <input id="nom" class="col-sm-6" type="text" name="nom" placeholder="Votre nom" minlength="3" maxlength="30" pattern="[a-zA-Z\sâêîôûäëïöüàèéòù]{3,30}" required />
         </div>
         <div class="form-group row">
             <label for="genre" class="col-sm-3 col-form-label">Genre*</label>
@@ -20,7 +34,7 @@
         </div>
         <div class="form-group row">
             <label for="email" class="col-sm-3 col-form-label">Email*</label>
-            <input id="email" class="col-sm-6" type="email" name="email" placeholder="Votre email" minlength="3" maxlength="50" required />
+            <input id="email" class="col-sm-6" type="email" name="email" placeholder="Votre email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
         </div>
         <div class="form-group row">
             <label for="pays" class="col-sm-3 col-form-label">Pays*</label>
