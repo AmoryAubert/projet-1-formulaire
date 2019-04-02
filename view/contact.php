@@ -52,19 +52,19 @@ input[type=text]:invalid:focus, input[type=email]:invalid:focus{
         <div class="form-group row">
             <label for="sujet" class="col-sm-12 col-form-label">Sujet</label>
             <div class="custom-control custom-radio col-sm-6">
-                <input type="checkbox" id="customRadio1" name="sujet" value="prix" class="custom-control-input">
+                <input type="checkbox" id="customRadio1" name="sujet[]" value="prix" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">Prix</label>
             </div>
             <div class="custom-control custom-radio col-sm-6">
-                <input type="checkbox" id="customRadio2" name="sujet" value="performance" class="custom-control-input">
+                <input type="checkbox" id="customRadio2" name="sujet[]" value="performance" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">Performance</label>
             </div>
             <div class="custom-control custom-radio col-sm-6">
-                <input type="checkbox" id="customRadio3" name="sujet" value="qualite" class="custom-control-input">
+                <input type="checkbox" id="customRadio3" name="sujet[]" value="qualite" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio3">Qualité</label>
             </div>
             <div class="custom-control custom-radio col-sm-6">
-                <input type="checkbox" id="customRadio4" name="sujet" value="autre" class="custom-control-input">
+                <input type="checkbox" id="customRadio4" name="sujet[]" value="autre" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio4">Autre</label>
             </div>
         </div>
