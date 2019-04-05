@@ -1,3 +1,4 @@
+<?php include './functions/check.php';?>
 <!DOCTYPE html>
 <html lang="fr">
 
