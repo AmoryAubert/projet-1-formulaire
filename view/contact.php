@@ -1,14 +1,6 @@
 <style>
-input[type=text]:valid:focus, input[type=email]:valid:focus{
-  color: green;
-  border: green 3px solid;
-} 
-input[type=text]:invalid:focus, input[type=email]:invalid:focus{
-  color: red;
-  border: red 3px solid;
-}
-.blindtest{
-  display: none;
+form{
+  border: 1px black solid;
 }
 </style>
 <h2>Contact</h2>

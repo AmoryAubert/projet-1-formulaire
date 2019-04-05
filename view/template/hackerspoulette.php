@@ -17,11 +17,7 @@
     <?php include './view/template/header.php';?>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-          <?php include './functions/router.php';?>
-            </div>
-        </div>
+        <?php include './functions/router.php';?>
     </div>
 
     <?php include './view/template/footer.php';?>
