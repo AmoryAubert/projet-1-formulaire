@@ -1,6 +1,24 @@
+//Variables couleur
 $bleu: #15c5bd;
 $blanc: #FFF;
 $noir: #303030;
+
+//Acceuil
+div{
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -100px;
+        height: 600px;
+        width: auto;
+    }
+    h1{
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+}
 
 //Products
 div{
@@ -44,12 +62,14 @@ div{
         }
         .inlaurier{
             display: block;
-            margin-top: -425px;
+            margin-top: -440px;
             font-size: 50px;
         }
         .outlaurier{
             display: block;
-            margin-top: 300px;
+            margin-top: 55px;
+            margin-bottom: 100px;
+            font-size: 18px;
         }
     }
 }
