@@ -1,0 +1,57 @@
+div .container-products {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+div .card {
+  width: 300px;
+  margin: 35px;
+}
+
+div .card .card-img-top {
+  float: right;
+  width: 300px;
+  height: auto;
+  padding: 13px;
+}
+
+div .card .card-title {
+  color: #FFF;
+}
+
+div .card .card-body {
+  background-color: #15c5bd;
+}
+
+div .card .btn {
+  background-color: #FFF;
+  color: #303030;
+  border-color: #303030;
+}
+
+div .logo404 {
+  text-align: center;
+}
+
+div .logo404 .laurier {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  height: 700px;
+  width: auto;
+}
+
+div .logo404 .inlaurier {
+  display: block;
+  margin-top: -425px;
+  font-size: 50px;
+}
+
+div .logo404 .outlaurier {
+  display: block;
+  margin-top: 300px;
+}
+/*# sourceMappingURL=style.css.map */

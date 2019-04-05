@@ -1,3 +1,55 @@
 $bleu: #15c5bd;
 $blanc: #FFF;
 $noir: #303030;
+
+//Products
+div{
+    .container-products{
+        flex-flow: row;
+    }
+    .card{
+        width: 300px;
+        margin: 35px;
+        .card-img-top{
+            float: right;
+            width: 300px;
+            height: auto;
+            padding: 13px;
+        }
+        .card-title{
+            color: $blanc;
+        }
+        .card-body{
+            background-color: $bleu;
+        }
+        .btn{
+            background-color: $blanc;
+            color: $noir;
+            border-color: $noir;
+        }
+    }
+}
+
+//404
+div{
+    .logo404{
+        text-align: center;
+        .laurier{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -150px;
+            height: 700px;
+            width: auto;
+        }
+        .inlaurier{
+            display: block;
+            margin-top: -425px;
+            font-size: 50px;
+        }
+        .outlaurier{
+            display: block;
+            margin-top: 300px;
+        }
+    }
+}
