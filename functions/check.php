@@ -9,8 +9,8 @@ if($_POST){
 		//si c'est OK !
 		//on filtre toutes les données entrées
         $options = array(
-            'prenom' 	=> FILTER_SANITIZE_STRING,
-            'nom' 	=> FILTER_SANITIZE_STRING,
+            'prenom' 	    => FILTER_SANITIZE_STRING,
+            'nom' 	        => FILTER_SANITIZE_STRING,
             'email' 		=> FILTER_VALIDATE_EMAIL,
             'message' 		=> FILTER_SANITIZE_STRING
         );
@@ -30,12 +30,12 @@ if($_POST){
 		if (empty($sujets)){
 			$sujets[0]="autre";
 		}
-        $N = count($sujets);
-        echo("You selected $N door(s): ");
-        for($i=0; $i < $N; $i++)
-        {
-          echo($sujets[$i] . " ");
-        }
+        //$N = count($sujets);
+        //echo("You selected $N door(s): ");
+        //for($i=0; $i < $N; $i++)
+        //{
+        //  echo($sujets[$i] . " ");
+        //}
         //echo "<p>".$result['prenom']."</p>";
         //echo "<p>".$result['nom']."</p>";
         //echo "<p>".$genre."</p>";

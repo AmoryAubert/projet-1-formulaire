@@ -71,4 +71,24 @@ div .logo404 .outlaurier {
   margin-bottom: 100px;
   font-size: 18px;
 }
-/*# sourceMappingURL=style.css.map */
+
+/* Produits */
+#shop{
+    display: flex;
+}
+.shop-box{
+    border: 1px black solid;
+}
+
+/* Contact */
+input[type=text]:valid:focus, input[type=email]:valid:focus{
+  color: green;
+  border: green 3px solid;
+} 
+input[type=text]:invalid:focus, input[type=email]:invalid:focus{
+  color: red;
+  border: red 3px solid;
+}
+.blindtest{
+  display: none;
+}
