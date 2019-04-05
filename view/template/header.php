@@ -1,7 +1,7 @@
 <?php include './functions/global.php';?>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="index.php">Zoolympie</a>
+  <a class="navbar-brand" href="index.php">HackersPoulette</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
