@@ -6,7 +6,7 @@
   <div class="card-body">
     <h4 class="card-title">Raspberry Pi 3</h4>
     <p class="card-text">
-        1.4GHz 64-bit quad-core processor, dual-band wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and Power-over-Ethernet support (with separate PoE HAT)
+      Carte mère du micro ordinateur Raspberry pi 3, idéal pour l'apprentissage !
     </p>
     <a href="#!" class="btn btn-primary">Acheter maintenant</a>
   </div>
