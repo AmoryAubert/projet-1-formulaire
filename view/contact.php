@@ -10,8 +10,9 @@ fieldset>fieldset, .required{
 }
 form{
   margin: auto auto 15px;
-  border: 1px solid black;
+  border: 3px solid #15c5bd;
   border-radius: 5px;
+  background-color: #f8f8f8;
 }
 #firstfs, .required{
   padding-left: 30px;
