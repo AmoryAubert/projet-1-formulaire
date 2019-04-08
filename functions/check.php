@@ -23,19 +23,43 @@ if($_POST){
         $pays=$_POST['pays'];
         $sujets=$_POST['sujet'];
         if ($genre=="f"){
-            $genre="femme";
+            $genre="Madame";
         } else {
-            $genre="homme";
+            $genre="Monsieur";
         }
 		if (empty($sujets)){
 			$sujets[0]="autre";
 		}
-        //$N = count($sujets);
-        //echo("You selected $N door(s): ");
-        //for($i=0; $i < $N; $i++)
-        //{
-        //  echo($sujets[$i] . " ");
-        //}
+		$passage_ligne = "\n";
+		$mail = "hels@alwaysdata.net";
+		$N = count($sujets);
+		$sujet="Sujet: ";
+        for($i=0; $i < $N; $i++)
+        {
+          $sujet.=$sujets[$i] . " ";
+        }
+		$boundary = "-----=".md5(rand());
+		$header = "From: \"Hackers Poulette\"<".$result['email'].">".$passage_ligne;
+		$header.= "MIME-Version: 1.0".$passage_ligne;
+		$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
+		
+		$message_html= "<html><head></head><body><p>Message de ".$genre." ".$result['prenom']." ".$result['nom']."(".$pays.")</p><p>".$result['message']."</p></body></html>";
+		$message_txt= "Message de ".$genre." ".$result['prenom']." ".$result['nom']."(".$pays.")".$passage_ligne.$result['message'];
+		//=====Création du message.
+		$message = $passage_ligne."--".$boundary.$passage_ligne;
+		//=====Ajout du message au format texte.
+		$message.= "Content-Type: text/plain; charset=\"UTF-8\"".$passage_ligne;
+		$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$message.= $passage_ligne.$message_txt.$passage_ligne;
+		//==========
+		$message.= $passage_ligne."--".$boundary.$passage_ligne;
+		//=====Ajout du message au format HTML
+		$message.= "Content-Type: text/html; charset=\"UTF-8\"".$passage_ligne;
+		$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$message.= $passage_ligne.$message_html.$passage_ligne;
+		//==========
+		//var_dump($message);
+		mail($mail,$sujet,$message,$header);
         //echo "<p>".$result['prenom']."</p>";
         //echo "<p>".$result['nom']."</p>";
         //echo "<p>".$genre."</p>";

@@ -1,28 +1,39 @@
 <style>
-body{
-  background-color: #9ab;
+h2,legend,fieldset{
+  text-align: center;
+}
+fieldset>fieldset, .required{
+  text-align: left;
+}
+.required{
+  color: #a00;
 }
 form{
   margin: auto auto 15px;
   border: 1px solid black;
   border-radius: 5px;
 }
-form fieldset:first-child{
-  border-radius: 5px;
-  text-align: center;
+#firstfs, .required{
   padding-left: 30px;
 }
 textarea{
   display: inline-block;
   margin: 10px auto;
 }
+fieldset>#sujet>div{
+  padding: 0 80px;
+}
+#secondfs label{
+  text-align: center;
+}
+
 </style>
 <h2>Contact</h2>
 <form action="#" method="post" class="col-md-5">
   <fieldset>
     <legend>Formulaire de contact</legend>
     <div class="required">*champs requis</div>
-    <fieldset>
+    <fieldset id="firstfs">
       <legend>Vos informations personelles</legend>
       <input id="firstname" class="col-sm-6 blindtest" type="text" name="firstname" placeholder="Votre prénom" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}"/>
       <div class="form-group row">
@@ -45,17 +56,17 @@ textarea{
       <div class="form-group row">
           <label for="pays" class="col-sm-3 col-form-label">Pays*</label>
           <select id="pays" class="col-sm-6" name="pays">
-            <option value="bel">Belgique</option>
-            <option value="can">Canada</option>
-            <option value="fra">France</option>
-            <option value="lux">Luxembourg</option>
-            <option value="sui">Suisse</option>
+            <option value="belgique">Belgique</option>
+            <option value="canada">Canada</option>
+            <option value="france">France</option>
+            <option value="luxembourg">Luxembourg</option>
+            <option value="suisse">Suisse</option>
           </select>
       </div>
     </fieldset> 
-    <fieldset>
+    <fieldset id="secondfs">
       <legend>Votre message</legend>
-      <div class="form-group row">
+      <div class="form-group row" id="sujet">
           <label for="sujet[]" class="col-sm-12 col-form-label">Sujet</label>
           <div class="custom-control custom-radio col-sm-6">
               <input type="checkbox" id="customRadio1" name="sujet[]" value="prix" class="custom-control-input">
@@ -66,7 +77,7 @@ textarea{
               <label class="custom-control-label" for="customRadio2">Performance</label>
           </div>
           <div class="custom-control custom-radio col-sm-6">
-              <input type="checkbox" id="customRadio3" name="sujet[]" value="qualite" class="custom-control-input">
+              <input type="checkbox" id="customRadio3" name="sujet[]" value="qualité" class="custom-control-input">
               <label class="custom-control-label" for="customRadio3">Qualité</label>
           </div>
           <div class="custom-control custom-radio col-sm-6">
@@ -75,7 +86,7 @@ textarea{
           </div>
       </div>
       <div class="form-group row">
-          <label for="message" class="col-sm-9 col-form-label">Message*</label>
+          <label for="message" class="col-sm-12 col-form-label">Message*</label>
           <textarea id="message" class="col-sm-9" type="text" name="message" rows="5" placeholder="Entrez votre message ici" required></textarea>
       </div>
     </fieldset>
