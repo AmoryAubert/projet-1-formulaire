@@ -1,7 +1,7 @@
 <!--<img src="./assets/img/404_page_cover.jpg" alt="404">-->
 <!-- logo404 -->
 <div class='logo404'>
-    <img class='laurier' src="https://zupimages.net/up/19/14/9vq6.png" alt="" />
+    <img class='laurier' src="./assets/img/logo404.png" alt="404 logo" />
     <div class='inlaurier'>
         <p>Error</p>
         <p>404</p>

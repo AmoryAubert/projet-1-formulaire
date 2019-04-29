@@ -56,9 +56,10 @@ div .card .card-title {
   color: #FFF;
 }
 
-div .card .card-body/*, input[type=text], textarea, input[type=email],  select*/{
+div .card .card-body {
   background-color: #15c5bd;
 }
+
 div .card .btn {
   background-color: #FFF;
   color: #303030;

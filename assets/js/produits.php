@@ -14,7 +14,7 @@
 
 <div class="card">
     <!-- packraspberry.jpeg-->
-  <img class="card-img-top" src="./assets/img/packraspberry.jpeg" alt="Card image cap">
+  <img class="card-img-top" src="./assets/img/packraspberry.jpg" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title">Raspberry Starter Pack</h4>
     <p class="card-text">
@@ -26,7 +26,7 @@
 
 <div class="card">
     <!-- 5nodeboard.jpg-->
-  <img class="card-img-top" src="./assets/img/5nodeboard.jpg" alt="Card image cap">
+  <img class="card-img-top" src="./assets/img/5nodeborad.jpg" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title">5 Node Raspberry Carrier board</h4>
     <p class="card-text">
